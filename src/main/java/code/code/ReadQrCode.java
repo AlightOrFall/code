@@ -20,7 +20,7 @@ public class ReadQrCode {
 	public static void main(String[] args) {
         try {
             MultiFormatReader multiFormatReader = new MultiFormatReader();
-            File file = new File("E:/file/images/1.png");
+            File file = new File("");
             BufferedImage image = ImageIO.read(file);
             //定义二维码参数
             Map hints = new HashMap();

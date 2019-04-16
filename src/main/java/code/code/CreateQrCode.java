@@ -17,10 +17,9 @@ public class CreateQrCode {
 
 	public static void main(String[] args) {
 		int width = 300;
-		int height = 300; 
+		int height = 300;
 		String format = "png";
-		/* http://192.168.0.223:8080/overturn/login.htm */
-		String content = "http://192.168.0.217:8089/shoe/page/index.htm";
+		String content = "";
 		// 定义二维码的参数
 		HashMap map = new HashMap();
 		// 设置编码
@@ -31,7 +30,7 @@ public class CreateQrCode {
 		try {
 			// 生成二维码
 			BitMatrix bitMatrix = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, width, height, map);
-			Path file = new File("E:/file/images/1.png").toPath();
+			Path file = new File("").toPath();
 			MatrixToImageWriter.writeToPath(bitMatrix, format, file);
 		} catch (WriterException e) {
 			e.printStackTrace();
