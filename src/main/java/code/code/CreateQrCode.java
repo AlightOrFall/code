@@ -16,7 +16,7 @@ import com.google.zxing.qrcode.decoder.ErrorCorrectionLevel;
 public class CreateQrCode {
 
 	public static void main(String[] args) {
-		int width = 300;
+		int width = 300; 
 		int height = 300;
 		String format = "png";
 		/* http://192.168.0.223:8080/overturn/login.htm */
